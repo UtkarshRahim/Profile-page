@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/login.css" type="text/css" />
         <title>In progress</title>
 
     </head>
@@ -41,13 +41,24 @@
             </form>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
-        <h1>Hi,There</h1>
-        <div class="container">
-             <p class="text-info">  Neel is not the only one who knows what a jumbotron is</p>
-        </div>
-        <p><a class="btn btn-primary btn-lg" href="pages/login.html" role="button">True that! Let's login !</a></p>
-    </div>
+    <div class="login-page">
+            <script src="../js/login.js"></script>
+            <div class="form">
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button id="login-button">login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
 </body>
 
 </html>
