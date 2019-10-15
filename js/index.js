@@ -10,7 +10,7 @@ $(document).ready(function () {
       var username = $('#username').val();
       var password = $('#password').val();
 
-      if (username === "admin" && password === "password") {
+      if (username === "mansi" && password === "cutoo") {
 
        location.href="./../pages/home.html";
      
