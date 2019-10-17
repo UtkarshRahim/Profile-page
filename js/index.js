@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
    setTimeout(function(){
-      location.href="./pages/home.html";
+      location.href="./pages/menuBar.html";
    },2000);
    
 });
