@@ -1,5 +1,9 @@
 "use strict";
+
 $(document).ready(function () {
+ 
+    $('#content').load("home.html");
+
     $('#button').click(function () {
         $('#alert').html("<div class=\"alert alert-danger\" role=\"alert\"><strong>Sorry man!</strong> It's still under construction.</div>");
         return false;
@@ -20,7 +24,7 @@ $(document).ready(function () {
         $('#academics').attr("class", "nav-item ");
         $('#skills').attr("class", "nav-item ");
         $('#neel').attr("class", "nav-item ");
-        $('#content').load("edu.html");
+        $('#content').load("home.html");
 
     });
 
