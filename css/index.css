@@ -9,15 +9,13 @@
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ 
 }
 
 body {
-  background: #09a6d69c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #09a6d69c, #09a6d69c);
-  background: -moz-linear-gradient(right, #09a6d69c, #09a6d69c);
-  background: -o-linear-gradient(right, #09a6d69c, #09a6d69c);
-  background: linear-gradient(to left, #09a6d69c, #09a6d69c);
+   /* fallback for old browsers */
+   background: rgb(32,122,210);
+   background: linear-gradient(90deg, rgba(32,122,210,1) 0%, rgba(107,162,211,1) 28%, rgba(49,150,224,1) 75%, rgba(42,113,177,1) 99%);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
@@ -43,3 +41,4 @@ body {
 .list-group{
   padding-top: 20px;
 }
+

@@ -1,6 +1,32 @@
 #my-image {
     border-radius: 50rem;
-    width : 10rem;
-    height : 10rem;
+    width : 15rem;
+    height : 15rem;
 
 }
+
+#name{
+    padding-top: 1.5rem;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: Cambria;
+}
+
+#designation{
+    color: #6c757d;
+    font-weight: bold;
+}
+
+/* .profile{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .intro{
+    color: white;
+} */
+
