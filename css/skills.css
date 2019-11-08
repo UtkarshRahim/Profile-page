@@ -1,4 +1,20 @@
-  img{
+.work{
+  height:3rem ;
+  width: 7rem;
+}
+
+#bridge{
+  font-weight: bold;
+  padding-left: 5em;
+}
+
+.textgrad{
+  
+  color:  rgba(42,113,177,1);
+  font-weight: bold;
+}
+
+img{
     height: 3rem;
     width: 3em;
   }
@@ -8,7 +24,20 @@
       padding-left: 10px;
 }
 
-.experience{
+.skills{
     padding-top: 20px;
 }
 
+#exp-content{
+  padding-top: 1em;
+  text-align: left;
+
+}
+
+#duration{
+  font-size: 0.8em;
+}
+
+.responsibilities{
+  text-align: left;
+}
