@@ -161,4 +161,8 @@ $(function(){
     $("#facebook").load("fb.html"); 
   });
 
+  $(function(){
+    $("#fb_events").load("fb_events.html"); 
+  });
+
 
