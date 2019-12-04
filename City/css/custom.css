@@ -68,3 +68,28 @@
     border-radius: 6px;
     background-color: #E0E0E0;
 }
+
+.event-text{
+    padding-top: 1rem;
+    font-size: 12px ;
+}
+
+.event-title{
+    font-size: 18px ;
+    text-align: center;
+
+}
+
+
+.event-button {
+       width: 37rem;
+}
+
+.vndate{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-body{
+    font-family: sans-serif;
+}

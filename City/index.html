@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/custom.css">
-    <link rel="icon" id="favicon" type="image/x-icon" href="./img/logo.svg" >
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.carousel.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="icon" id="favicon" type="image/x-icon" href="/img/logo.svg">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="/owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/mailer.js"></script>
    
     <title>Man City</title>
 </head>
@@ -46,7 +50,7 @@
     <div class="mobile-header">
         <div class="container d-flex flex-row justify-content-between align-items-center">
             <div class="mob-logo">
-                <img src="./img/logo.svg" alt="Logo">
+                <img src="/img/logo.svg" alt="Logo">
             </div>
             <div class="menu-icon" id="mobNavBtn">
             </div>
@@ -58,15 +62,15 @@
                 <div class="col-md-5">
                     <nav class="w-100">
                         <ul class="mb-0">
-                            <li><a href="home">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="membership">Membership</a></li>
-                            <li><a href="events">Events</a> </li>
+                            <li><a href="./fb_events.html">Events</a> </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-2">
                     <div class="logo d-flex justify-content-center">
-                        <img src="./img/logo.svg" alt="" id="deskTopLogo" class="fix-logo">
+                        <img src="/img/logo.svg" alt="" id="deskTopLogo" class="fix-logo">
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -115,21 +119,7 @@
                             <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
                                 <div class="item">
                                     <div class="card latest-news">
-                                        <img class="card-img-top" src="./img/1.jpg">
-                                        <div class="card-body">
-                                            <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</p>
-                                            <p class="font-weight-bold text-md text-secondary text-capitalize">sept
-                                                5,2018</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
-                                <div class="item">
-                                    <div class="card latest-news">
-                                        <img class="card-img-top" src="./img/1.jpg">
+                                        <img class="card-img-top" src="/img/1.jpg">
                                         <div class="card-body">
                                             <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
                                                 printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -143,7 +133,21 @@
                             <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
                                 <div class="item">
                                     <div class="card latest-news">
-                                        <img class="card-img-top" src="./img/1.jpg">
+                                        <img class="card-img-top" src="/img/1.jpg">
+                                        <div class="card-body">
+                                            <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
+                                                printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s</p>
+                                            <p class="font-weight-bold text-md text-secondary text-capitalize">Nov 7,
+                                                2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="card latest-news">
+                                        <img class="card-img-top" src="/img/1.jpg">
                                         <div class="card-body">
                                             <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
                                                 printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -157,8 +161,8 @@
                          </div>
                     </div>
                     <div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><img
-                                src="./img/left.svg"></button><button type="button" role="presentation"
-                            class="owl-next"><img src="./img/right.svg"></button></div>
+                                src="/img/left.svg"></button><button type="button" role="presentation"
+                            class="owl-next"><img src="/img/right.svg"></button></div>
                     <div class="owl-dots"><button role="button"
                             class="owl-dot"></button></div>
                 </div>
@@ -178,7 +182,7 @@
                                             <div class="caption text-white">The Fourmidables</div>
                                         </div>
                                     </div>
-                                    <img class="card-img-top" src="./img/formidables.jpg">
+                                    <img class="card-img-top" src="/img/formidables.jpg">
                                 </div>
                             </div>
                         </div>
@@ -192,7 +196,7 @@
                                                 standard dummy text ever since the 1500s</div>
                                         </div>
                                     </div>
-                                    <img class="card-img-top" src="./img/gallery2.jpg">
+                                    <img class="card-img-top" src="/img/gallery2.jpg">
                                 </div>
                             </div>
                         </div>
@@ -206,7 +210,7 @@
                                                 standard dummy text ever since the 1500s</div>
                                         </div>
                                     </div>
-                                    <img class="card-img-top" src="./img/gallery3.jpg">
+                                    <img class="card-img-top" src="/img/gallery3.jpg">
                                 </div>
                             </div>
                         </div>
@@ -220,7 +224,7 @@
                                                 standard dummy text ever since the 1500s</div>
                                         </div>
                                     </div>
-                                    <img class="card-img-top" src="./img/formidables.jpg">
+                                    <img class="card-img-top" src="/img/formidables.jpg">
                                 </div>
                             </div>
                         </div>
@@ -236,7 +240,7 @@
         <div class="social-media bg-grey">
             <div class="container mt-4">
                 <div class="w-100 d-block my-3">
-                    <label class="font-weight-bold text-md">Connect with us on social media</label>
+                    <label class="font-weight-bold text-lg">Connect with us on social media</label>
                 </div>
                 <div class="row d-flex flex-row" id="socialMedia">
                     <div class="col-md-4 my-4">
@@ -287,7 +291,8 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-5  h-100">
+                    
+                <div class="col-md-5 ">
                     <div class="text-white input-container">
                         <div class="row d-flex flex-row contact-box">
                             <div class="col-md-12">
@@ -296,26 +301,26 @@
                                     <p>We'd love to hear from you! Contact us with your questions,comments and
                                         suggestions.
                                     </p>
-                                    <p>Youremail@example.com</p>
                                 </div>
                                 <div class="row d-flex flex-row mt-5">
+                                    
                                     <div class="col-md-6 my-3">
-                                        <input type="text" placeholder="Full Name">
+                                        <input id="name" type="text" placeholder="Full Name">
                                     </div>
                                     <div class="col-md-6 my-3">
-                                        <input type="text" placeholder="Phone No">
+                                        <input id="phone" type="text" placeholder="Phone No">
                                     </div>
                                     <div class="col-md-12 my-3">
-                                        <input type="text" placeholder="Email">
+                                        <input id="email" type="text" placeholder="Email">
                                     </div>
                                     <div class="col-md-12 my-3">
-                                        <input type="text" placeholder="Subject">
+                                        <input id="subject" type="text" placeholder="Subject">
                                     </div>
                                     <div class="col-md-12 my-3">
-                                        <textarea placeholder="Message" cols="30" rows="6"></textarea>
+                                        <textarea id="body" placeholder="Message" cols="30" rows="6"></textarea>
                                     </div>
                                     <div class="col-md-12  my-4">
-                                        <button class="btn btn-danger text-md py-3  w-100">Send </button>
+                                        <button class="btn btn-danger text-md py-3  w-100" onClick="sendData()">Send</button>
                                     </div>
                                 </div>
                             </div>
@@ -323,20 +328,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 px-0">
-                    <div class="overlay"></div>
-                    <div class="w-100">
-                        <img class="w-100" src="./img/team.png">
-                    </div>
-                </div>
-
-
+              
+                        <div class="col-md-7 px-0">
+                            <div class="w-100">
+                                <img class="w-100 feedback" src="/img/2.jpg">
+                            </div>
+                        </div>
+                        <iframe hidden src="https://docs.google.com/forms/d/e/1FAIpQLSfB2bt8OjJklg5RW8ub3EfLqDT1iezlVNY3-josUvut1YfjVA/viewform?embedded=true" width="640" height="1171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </footer>
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./owlcarousel/owl.carousel.js"></script>
-    <script src="./js/custom.js"></script>
+   
 
 
 </body>
