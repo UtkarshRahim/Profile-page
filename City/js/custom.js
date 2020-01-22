@@ -25,7 +25,7 @@ $(document).ready(function () {
         // autoWidth: true,
         nav: true,
         // dots: true,
-        navText: ["<img src='img/left.svg'>","<img src='img/right.svg'>" ],
+        navText: ["<img src='img/left.svg'>", "<img src='img/right.svg'>"],
         responsiveClass: true,
         //mergeFit: true,
         responsive: {
@@ -44,40 +44,31 @@ $(document).ready(function () {
             }
         }
     })
-    var lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-    var mokData = [
-        { category: "Material", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'Nov 7, 2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'Nov 7, 2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'Nov 7, 2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Material", date: 'Nov 7, 2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Material", date: '2', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'Nov 7, 2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'Nov 7, 2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
-        { category: "Tool", date: 'sept 5,2018', name: lorem, image: 'img/1.jpg' },
 
-    ];
-    $.each(mokData, function (i) {
-        var templateString = `
-        <div class="item">
-            <div class="card latest-news">
-              <img class="card-img-top" src= ${mokData[i].image}>
-              <div class="card-body">
-                <p class="font-weight-bold text-md">${mokData[i].name}</p>
-                <p class="font-weight-bold text-md text-secondary text-capitalize">${mokData[i].date}</p>
-              </div>
-             </div>
-        </div>`;
-        owl.trigger('add.owl.carousel', [$(templateString)]);
-        owl.trigger('refresh.owl.carousel');
-    })
+    function x() {
+        var b = document.getElementById("posts");
+        console.log(b);
+    }
+    // var lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    // var mokData = [
+
+
+
+    // ];
+    // $.each(mokData, function (i) {
+    //     var templateString = `
+    //     <div class="item">
+    //         <div class="card latest-news">
+
+    //           <div class="card-body">
+
+
+    //           </div>
+    //          </div>
+    //     </div>`;
+    //     owl.trigger('add.owl.carousel', [$(templateString)]);
+    //     owl.trigger('refresh.owl.carousel');
+    // })
 });
 
 // gallery carousel
@@ -89,17 +80,17 @@ $(document).ready(function () {
         singleItem: true,
         autoHeight: true,
         transitionStyle: "fade",
-        nav:true,
+        nav: true,
         navText: ["<img src='img/transparent-left.svg'>", "<img src='img/transparent-right.svg'>"],
-        dots:false,
-        items : 1,
-        itemsDesktop : false,
-        itemsDesktopSmall : false,
+        dots: false,
+        items: 1,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
         itemsTablet: false,
-        itemsMobile : false
+        itemsMobile: false
     });
     var caption = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-  
+
     var gallryImages = [{
         image: "img/gallery1.jpg",
         caption: caption
@@ -149,20 +140,48 @@ $(document).ready(function () {
     })
 });
 
-$(function(){
-    $("#twitter").load("twitter.html"); 
-  });
+$(function () {
+    $("#twitter").load("./feed/twitter.html");
+});
 
-  $(function(){
-    $("#instagram").load("instagram.html"); 
-  });
+$(function () {
+    $("#instagram").load("./feed/instagram.html");
+});
 
-  $(function(){
-    $("#facebook").load("fb.html"); 
-  });
+$(function () {
+    $("#facebook").load("./feed/fb.html");
+});
 
-  $(function(){
-    $("#fb_events").load("fb_events.html"); 
-  });
+$(function () {
+    $("#fb_events").load("./menu/fb_events.html");
+});
+
+
+
+sendData = () => {
+    var fullName = document.getElementById("name").value;
+    var finalName = fullName.replace(/ /g, "+");
+
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var initialSubject = document.getElementById("subject").value;
+    var subject = initialSubject.replace(/ /g, "+");
+    var initialMessage = document.getElementById("message").value;
+    var message = initialMessage.replace(/ /g, "+");
+    var url = "https://docs.google.com/forms/d/e/1FAIpQLSfB2bt8OjJklg5RW8ub3EfLqDT1iezlVNY3-josUvut1YfjVA/formResponse?usp=pp_url&entry.44052684=" + finalName + "&entry.1609690659=" + phone + "&entry.935406244=" + email + "&entry.866322259=" + subject + "&entry.496307721=" + message + "";
+    if (fullName && fullName != "" && message && message != "") {
+        $.ajax({
+            url: url
+        });
+       
+        //  $("#feedback-form").hide();
+        $("#feedback-form").load("/pages/feedbackresult.html");
+    }
+
+}
+
+
+
+
 
 

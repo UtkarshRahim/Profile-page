@@ -128,7 +128,6 @@ nav ul li a:hover, nav ul li a:active {
 }
 
 .banner {
-   
     height: 100vh;
     background-image: url(../img/champions.jpg);
     background-size: cover;
@@ -479,6 +478,15 @@ footer button {
     padding-top: 50rem;
 }
 
-.feedback{
+.feedback {
     padding-top: 5rem;
+}
+
+.membership-label {
+    font-size: 16;
+}
+
+.submit-form {
+    font-size: 18px;
+    width: 100px;
 }

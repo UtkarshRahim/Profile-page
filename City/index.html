@@ -15,228 +15,51 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./owlcarousel/owl.carousel.js"></script>
     <script src="./js/custom.js"></script>
-    <script src="./js/mailer.js"></script>
-   
+    <script src="./js/menu.js"></script>
+    
+
     <title>Man City</title>
 </head>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mob-nav">
-        <button class="close" id="hideNav"></button>
-        <div class="navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Membership</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Write For Us?</a>
-                </li>
 
-            </ul>
-        </div>
-    </nav>
-    <div class="mobile-header">
-        <div class="container d-flex flex-row justify-content-between align-items-center">
-            <div class="mob-logo">
-                <img src="./img/logo.svg" alt="Logo">
-            </div>
-            <div class="menu-icon" id="mobNavBtn">
-            </div>
-        </div>
+    
+    <div id="membership-menu">
+        <div id="menu-content"></div>
     </div>
-    <header id="deskTopNav" class="fixed-header animated animatedFadeInUp fadeInUp">
-        <div class="container desktop-nav">
-            <div class="row">
-                <div class="col-md-5">
-                    <nav class="w-100">
-                        <ul class="mb-0">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="membership">Membership</a></li>
-                            <li><a href="./fb_events.html">Events</a> </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-2">
-                    <div class="logo d-flex justify-content-center">
-                        <img src="./img/logo.svg" alt="" id="deskTopLogo" class="fix-logo">
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <nav class="w-100">
-                        <ul class="mb-0">
-                            <li><a href="about">About</a></li>
-                            <li><a href="news">News</a> </li>
-                            <li><a href="writeForUs">Write For Us?</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+
+    
     <main>
-       
+
         <div class="container">
-          
+
             <div class="banner" id="banner">
-                    <div class="container banner-content ">
-                          
-                    </div>
-                  
+                <div class="container banner-content ">
+
                 </div>
-                <div class="row d-flex flex-row py-4 heading">
-                        <div class="col-md-6">
-                            <div class="theme-color text-lg font-weight-bold">Hi there! We are Bengaluru Cityzens, an Official Supporters Club recognised by Manchester City Football Club, since 2017. </div>
-                        </div>
-                        <div class=" col-md-6 text-right ">
-                            <p class="text-lg my-0  dark-gray learn"> Join us to stay updated on our events and happenings in Bengaluru.</p>
-                                <button class="btn btn-danger text-md ">Learn More</button>
-                        
-                    </div>
-                    </div>
-        </div>
-        <!-- Carousal -->
-        <div class="section-contact bg-grey">
-            <div class="container mt-4">
-                <div class="w-100 d-block my-5">
-                    <label class="font-weight-bold text-md">Latest News</label>
+
+            </div>
+            <div class="row d-flex flex-row py-4 heading">
+                <div class="col-md-6">
+                    <div class="theme-color text-lg font-weight-bold">Hi there! We are Bengaluru Cityzens, an Official
+                        Supporters Club recognised by Manchester City Football Club, since 2017. </div>
                 </div>
-                <div class="owl-carousel owl-theme mt-3 owl-loaded owl-drag" id="latestNews">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="width: 5974px; transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;">
-                            <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
-                                <div class="item">
-                                    <div class="card latest-news">
-                                        <img class="card-img-top" src="./img/1.jpg">
-                                        <div class="card-body">
-                                            <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</p>
-                                            <p class="font-weight-bold text-md text-secondary text-capitalize">Nov 7,
-                                                2018</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
-                                <div class="item">
-                                    <div class="card latest-news">
-                                        <img class="card-img-top" src="./img/1.jpg">
-                                        <div class="card-body">
-                                            <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</p>
-                                            <p class="font-weight-bold text-md text-secondary text-capitalize">Nov 7,
-                                                2018</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 363.333px; margin-right: 10px;">
-                                <div class="item">
-                                    <div class="card latest-news">
-                                        <img class="card-img-top" src="./img/1.jpg">
-                                        <div class="card-body">
-                                            <p class="font-weight-bold text-md">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</p>
-                                            <p class="font-weight-bold text-md text-secondary text-capitalize">Nov 7,
-                                                2018</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><img
-                                src="./img/left.svg"></button><button type="button" role="presentation"
-                            class="owl-next"><img src="./img/right.svg"></button></div>
-                    <div class="owl-dots"><button role="button"
-                            class="owl-dot"></button></div>
+                <div class=" col-md-6 text-right ">
+                    <p class="text-lg my-0  dark-gray learn" style="text-align: left;"> Join us to stay updated on our
+                        events and happenings in
+                        Bengaluru.</p>
+                    <button class="btn btn-danger text-md ">Learn More</button>
+
                 </div>
             </div>
         </div>
-        <!-- <div class="row d-flex"> -->
-        <div class="gallery">
-            <div class="owl-carousel owl-theme owl-loaded owl-drag" id="gallery">
-                <div class="owl-stage-outer owl-height" style="height: 716.74px;">
-                    <div class="owl-stage"
-                        style="width: 5096px; transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;">
-                        <div class="owl-item active" style="width: 1274px;">
-                            <div class="item">
-                                <div class="card">
-                                    <div class="overlay">
-                                        <div class="container">
-                                            <div class="caption text-white">The Fourmidables</div>
-                                        </div>
-                                    </div>
-                                    <img class="card-img-top" src="./img/formidables.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 1274px;">
-                            <div class="item">
-                                <div class="card">
-                                    <div class="overlay">
-                                        <div class="container">
-                                            <div class="caption text-white">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</div>
-                                        </div>
-                                    </div>
-                                    <img class="card-img-top" src="./img/gallery2.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 1274px;">
-                            <div class="item">
-                                <div class="card">
-                                    <div class="overlay">
-                                        <div class="container">
-                                            <div class="caption text-white">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</div>
-                                        </div>
-                                    </div>
-                                    <img class="card-img-top" src="./img/gallery3.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 1274px;">
-                            <div class="item">
-                                <div class="card">
-                                    <div class="overlay">
-                                        <div class="container">
-                                            <div class="caption text-white">Lorem Ipsum is simply dummy text of the
-                                                printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s</div>
-                                        </div>
-                                    </div>
-                                    <img class="card-img-top" src="./img/formidables.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><img
-                            src="img/transparent-left.svg"></button><button type="button" role="presentation"
-                        class="owl-next"><img src="img/transparent-right.svg"></button></div>
-                <div class="owl-dots disabled"></div>
+      
             </div>
         </div>
-        <!-- </div> -->
+        
         <div class="social-media bg-grey">
             <div class="container mt-4">
                 <div class="w-100 d-block my-3">
@@ -250,8 +73,9 @@
                                 <span class="float-right icon facebook align-self-end"></span>
                             </div>
                             <div class="card-body">
-                                    <!--Embed  fb-->
-                                <a id="facebook" href="https://www.facebook.com/BengaluruCityzens/" target="_blank" class="text-md">Manchester City FC: Bengaluru Supporters Club</a>
+                                <!--Embed  fb-->
+                                <a id="facebook" href="https://www.facebook.com/BengaluruCityzens/" target="_blank"
+                                    class="text-md">Manchester City FC: Bengaluru Supporters Club</a>
                             </div>
                         </div>
                     </div>
@@ -263,9 +87,10 @@
                             </div>
                             <div class="card-body">
                                 <!--Embed tweets-->
-                                <a id="twitter" href="https://twitter.com/BLR_Cityzens" target="_blank" class="text-md">Bengaluru Cityzens (@BLR_Cityzens)</a>
-                                
-                                
+                                <a id="twitter" href="https://twitter.com/BLR_Cityzens" target="_blank"
+                                    class="text-md">Bengaluru Cityzens (@BLR_Cityzens)</a>
+
+
                             </div>
                         </div>
                     </div>
@@ -277,9 +102,10 @@
                             </div>
                             <div class="card-body">
                                 <!--Embed instagram-->
-                                    <a id="instagram" href="https://www.instagram.com/bengaluru_cityzens/" target="_blank" class="text-md">Bengaluru Cityzens (@bengaluru_cityzens)</a>
-                                    
-                                    
+                                <a id="instagram" href="https://www.instagram.com/bengaluru_cityzens/" target="_blank"
+                                    class="text-md">Bengaluru Cityzens (@bengaluru_cityzens)</a>
+
+
                             </div>
                         </div>
                     </div>
@@ -289,9 +115,9 @@
     </main>
 
     <footer>
-        <div class="container-fluid">
+        <div id="feedback-form" class="container-fluid">
             <div class="row">
-                    
+
                 <div class="col-md-5 ">
                     <div class="text-white input-container">
                         <div class="row d-flex flex-row contact-box">
@@ -303,7 +129,7 @@
                                     </p>
                                 </div>
                                 <div class="row d-flex flex-row mt-5">
-                                    
+
                                     <div class="col-md-6 my-3">
                                         <input id="name" type="text" placeholder="Full Name">
                                     </div>
@@ -317,10 +143,11 @@
                                         <input id="subject" type="text" placeholder="Subject">
                                     </div>
                                     <div class="col-md-12 my-3">
-                                        <textarea id="body" placeholder="Message" cols="30" rows="6"></textarea>
+                                        <textarea id="message" placeholder="Message" cols="30" rows="6"></textarea>
                                     </div>
                                     <div class="col-md-12  my-4">
-                                        <button class="btn btn-danger text-md py-3  w-100" onClick="sendData()">Send</button>
+                                        <button class="btn btn-danger text-md py-3  w-100"
+                                            onClick="sendData()">Send</button>
                                     </div>
                                 </div>
                             </div>
@@ -328,18 +155,15 @@
                         </div>
                     </div>
                 </div>
-              
-                        <div class="col-md-7 px-0">
-                            <div class="w-100">
-                                <img class="w-100 feedback" src="./img/2.jpg">
-                            </div>
-                        </div>
-                        <iframe hidden src="https://docs.google.com/forms/d/e/1FAIpQLSfB2bt8OjJklg5RW8ub3EfLqDT1iezlVNY3-josUvut1YfjVA/viewform?embedded=true" width="640" height="1171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                <div class="col-md-7 px-0">
+                    <div class="w-100">
+                        <img class="w-100 feedback" src="./img/2.jpg">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-   
-
 
 </body>
 
